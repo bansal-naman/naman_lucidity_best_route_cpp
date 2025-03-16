@@ -1,0 +1,8 @@
+# Ignore object files
+*.o
+
+# Ignore compiled executables
+BestRoute
+
+# Ignore editor/IDE files
+.vscode/
