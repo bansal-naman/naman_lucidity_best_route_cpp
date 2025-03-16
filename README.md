@@ -19,6 +19,8 @@ Note:
 
 ## Next Steps & Potential Improvements
 
-- More Efficient Route Calculation: Right now, we brute-force through all possible sequences, which works for small inputs but isn’t scalable. Exploring smarter algorithms like A search* or branch and bound could help.
+- More Efficient Route Calculation: Right now, we brute-force through all possible sequences, which works for small inputs but isn’t scalable.
+    - My next step would be to explore heuristic approaches to find a “good enough” solution efficiently. Since this problem is essentially a Traveling Salesman Problem with added constraints (like ensuring each order’s pickup happens before its delivery and considering preparation times), I believe a greedy approach could work well. A simple idea would be to repeatedly choose the nearest valid pickup or delivery point (while following all constraints) and iteratively build a near-optimal route instead of evaluating all possible permutations.
+
 - Prioritize Certain Deliveries: Some orders, like hot food, might need to be delivered first. Adding priority-based logic could make the system smarter.
 - Support More Flexible Order Handling: In the real world, a delivery executive might have more orders than consumers (or vice versa). Extending the solution to handle these cases would make it more robust.
