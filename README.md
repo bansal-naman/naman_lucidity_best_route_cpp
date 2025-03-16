@@ -17,6 +17,17 @@ Note:
 - Travel time is rounded up to ensure realistic time calculations.
 - The number of orders should match the number of consumers.
 
+## Running Test Cases
+
+- The `unit_tests.cpp` file runs multiple test cases to verify the solution.
+- It initializes all objects and prints the output.
+- More tests can be easily added by including additional scenarios with more orders or consumers.
+- I'm using Make to compile and build the project.
+    - Steps to run:
+        -  `make` (make sure make is installed)
+        - `./BestRoute`
+        - `make clean` to clean
+
 ## Next Steps & Potential Improvements
 
 - More Efficient Route Calculation: Right now, we brute-force through all possible sequences, which works for small inputs but isn’t scalable.
