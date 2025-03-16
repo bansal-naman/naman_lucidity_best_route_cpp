@@ -4,7 +4,7 @@
 #include "restaurant.h"
 
 class Order {
-public:
+  public:
     Restaurant restaurant;
     int prepTime;
 

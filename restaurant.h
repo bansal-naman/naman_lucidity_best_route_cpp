@@ -4,7 +4,7 @@
 #include "location.h"
 
 class Restaurant {
-public:
+  public:
     Location location;
     Restaurant(Location loc);
 };

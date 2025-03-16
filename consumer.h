@@ -4,7 +4,7 @@
 #include "location.h"
 
 class Consumer {
-public:
+  public:
     Location location;
     Consumer(Location loc);
 };
