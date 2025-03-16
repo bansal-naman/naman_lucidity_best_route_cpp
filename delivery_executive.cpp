@@ -35,7 +35,7 @@ int DeliveryExecutive::findOptimalRoute() {
         bool validSequence = true;
 
         for (int idx : sequence) {
-            int travelTime = std::ceil(current.travelTimeTo(stops[idx]));
+            int travelTime = current.travelTimeTo(stops[idx]);
             time += travelTime;
 
             if (idx < numOrders) { // Picking up order

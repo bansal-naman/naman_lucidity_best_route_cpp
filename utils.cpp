@@ -14,8 +14,9 @@ double haversineDistance(double lat1, double lon1, double lat2, double lon2) {
     return EARTH_RADIUS_KM * c;
 }
 
-double calculateTravelTime(double lat1, double lon1, double lat2, double lon2) {
+int calculateTravelTime(double lat1, double lon1, double lat2, double lon2) {
     double distanceKm = haversineDistance(lat1, lon1, lat2, lon2);
     double timeInHours = distanceKm / AVERAGE_SPEED_KMPH;
-    return timeInHours * 60;
+    int timeInMinutes = std::ceil(timeInHours * 60); // converting hours to minutes and rounding up to next integer
+    return timeInMinutes;
 }

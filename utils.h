@@ -14,6 +14,6 @@ double degreesToRadians(double degrees);
 double haversineDistance(double lat1, double lon1, double lat2, double lon2);
 
 // Function to compute travel time using Haversine formula
-double calculateTravelTime(double lat1, double lon1, double lat2, double lon2);
+int calculateTravelTime(double lat1, double lon1, double lat2, double lon2);
 
 #endif

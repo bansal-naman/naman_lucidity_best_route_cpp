@@ -6,6 +6,6 @@ double Location::distanceTo(const Location &other) const {
     return haversineDistance(latitude, longitude, other.latitude, other.longitude);
 }
 
-double Location::travelTimeTo(const Location &other) const {
+int Location::travelTimeTo(const Location &other) const {
     return calculateTravelTime(latitude, longitude, other.latitude, other.longitude);
 }
